@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+}
+
+#particles-js {
+  background: black;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+#principal {
+  color: white;
+}
+
+#nav {
+  color: white;
+  background-color: rgba(3, 3, 3, 0.09);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 30p rgba(255, 255, 255, 0.09);
+}
+
+#navbar a {
+  color: white;
+  transition: 3s;
+}
+
+#nav a:hover {
+  color: white;
+}
+
+.subTitulo {
+  color: blueviolet;
+}
+
+#card-personal {
+  border-color: blueviolet;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+#card-personal img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+
+#card-proyectos {
+  border-color: blueviolet;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+#card-proyectos a {
+  background-color: #6200ea;
+  border: none;
+}
+
+#card-proyectos a:hover {
+  background-color: #3700b3;
+}
+
+.img-portada {
+    width: 100%; /* Para que la imagen ocupe el ancho completo de la card */
+    height: 200px; /* Ajusta la altura según lo que necesites */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta para llenar el área */
+  }
+
+.tarjetas:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px 5px blueviolet;
+}
+
+.carousel-img {
+  height: 300px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+/* about */
+
+/* SKILLS ICONS*/
+.skills-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+
+.skill {
+  border-radius: 50%;
+  width: 130px; /* Ancho del contenedor */
+  height: 130px; /* Altura del contenedor */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid blueviolet; /* Borde blueviolet */
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.skill i {
+  color: #fff; /* Color de los iconos */
+  font-size: 2em;
+}
+
+.skill span {
+  color: #fff; /* Color del texto */
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.skill:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+  transition: transform 0.1s ease-in-out;
+}
+
+/* END ICONS */
+
+/* contacto */
+.contact-form {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.09);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.contact-form label {
+  color: #f0f0f0;
+}
+.contact-form input,
+.contact-form textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #444444;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888888;
+}
+.contact-form button {
+  background-color: #6200ea;
+  border: none;
+}
+.contact-form button:hover {
+  background-color: #3700b3;
+}
+
+/* Estilos para el formulario */
+.contact-form .form-control {
+  background-color: #333 !important; /* Fondo oscuro para los campos de entrada */
+  color: #fff !important; /* Texto blanco dentro de los campos de entrada */
+  border: 1px solid #555 !important; /* Borde ligeramente más claro que el fondo para que se distinga */
+}
+
+.contact-form .form-control::placeholder {
+  color: #aaa !important; /* Color del texto del placeholder en gris claro */
+}
+
+/* Estilos para el textarea */
+.contact-form textarea.form-control {
+  background-color: #333; /* Fondo oscuro para el área de texto */
+  color: #fff; /* Texto blanco dentro del área de texto */
+  border: 1px solid #555; /* Borde ligeramente más claro que el fondo para que se distinga */
+}
